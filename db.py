@@ -24,14 +24,12 @@ def conectar():
     try:
         conexao = pg.connect(**PARAMS)
         cursor = conexao.cursor()
+        print("deu certo!!!")
         return conexao, cursor
     except Exception as erro:
         print(f"erro de conexão: {erro}")
         return None, None
-    
-conexao, cursor = conectar()
-cursor.execute(
-    "INSERT INTO alunos (nome, idade) VALUES (%s, %s)",
-    ("eduardo", 30)
-    
-    )  
+  
+
+
+   
