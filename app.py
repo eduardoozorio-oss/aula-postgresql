@@ -20,3 +20,12 @@ if menu == "inserir":
 
 
 
+elif menu == "lista":
+    st.subheader("listar alunos")
+    alunos = listar_alunos
+    if alunos:
+        for linha in alunos:
+            st.write(f"ID={linha[0]} | NOME={linha[1]} | IDADE{linha[2]}")
+    else:
+        st.info("nenhum aluno encontrado.")
+
