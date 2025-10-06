@@ -57,3 +57,5 @@ elif menu == "Deletar":
             st.success(f"aluno deletado com sucesso.")
     else:
         st.info("Nenhum aluno disponivel para atulizar.")
+
+        
